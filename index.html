@@ -93,20 +93,20 @@
       
         <h3 id="nyanpass面板中如何自建单端？"><a href="#nyanpass面板中如何自建单端？" class="headerlink" title="nyanpass面板中如何自建单端？"></a>nyanpass面板中如何自建单端？</h3><p>概念：什么是单端？隧道就像一根水管，入口是一端，出口是一端，自建出口端，即自建单端。</p>
 <p>主页，左侧，单端隧道，添加设备组</p>
-<p><img src="C:\Users\hkwww\AppData\Roaming\Typora\typora-user-images\image-20240602161729069.png" alt="image-20240602161729069"></p>
-<p><img src="C:\Users\hkwww\AppData\Roaming\Typora\typora-user-images\image-20240602162011356.png" alt="image-20240602162011356"></p>
-<p><img src="C:\Users\hkwww\AppData\Roaming\Typora\typora-user-images\image-20240602162413147.png" alt="image-20240602162413147"></p>
+<p><img src="/source/images/image-20240602161729069.png" alt="image-20240602161729069"></p>
+<p><img src="/source/images/image-20240602162011356.png" alt="image-20240602162011356"></p>
+<p><img src="/source/images/image-20240602162413147.png" alt="image-20240602162413147"></p>
 <p>转到已经ssh登录的出口机上粘贴命令</p>
-<p><img src="C:\Users\hkwww\AppData\Roaming\Typora\typora-user-images\image-20240602162648239.png" alt="image-20240602162648239"></p>
+<p><img src="/source/images/image-20240602162648239.png" alt="image-20240602162648239"></p>
 <p>默认跳过此步，若要指定端口，末尾加参数–tls-port 33531，如下</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash &lt;(curl -fLSs https://api.nyafw.com/download/nyanpass-install.sh) rel_nodeclient <span class="string">&quot;-o -t 4ecebd34-0ae2-4188-9a47-4d109e1917ab -u https://zf.www001.shop --tls-port 33531&quot;</span></span><br></pre></td></tr></table></figure>
 
 
 
 <p>安装成功如下显示</p>
-<p><img src="C:\Users\hkwww\AppData\Roaming\Typora\typora-user-images\image-20240602163120338.png" alt="image-20240602163120338"></p>
+<p><img src="/images/image-20240602163120338.png" alt="image-20240602163120338"></p>
 <p>服务器状态，会显示自己刚安装成功的单端</p>
-<p><img src="C:\Users\hkwww\AppData\Roaming\Typora\typora-user-images\image-20240602163323988.png" alt="image-20240602163323988"></p>
+<p><img src="/images/image-20240602163323988.png" alt="image-20240602163323988"></p>
 <p>建好后，转发规则就可以使用自己刚建的单独了</p>
 <h4 id="卸载单端"><a href="#卸载单端" class="headerlink" title="卸载单端"></a>卸载单端</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl <span class="built_in">disable</span> --now nyanpass ; <span class="built_in">rm</span> -rf /opt/nyanpass ; <span class="built_in">rm</span> -f /etc/systemd/system/nyanpass.service</span><br></pre></td></tr></table></figure>
 
@@ -114,7 +114,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/06/02/nyanpass%E9%9D%A2%E6%9D%BF%E4%B8%AD%E5%A6%82%E4%BD%95%E8%87%AA%E5%BB%BA%E5%8D%95%E7%AB%AF/" data-id="clwxb7xcr0000do8v6ui18x3c" data-title="nyanpass面板中如何自建单端" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/06/02/nyanpass%E9%9D%A2%E6%9D%BF%E4%B8%AD%E5%A6%82%E4%BD%95%E8%87%AA%E5%BB%BA%E5%8D%95%E7%AB%AF/" data-id="clwxbbxys0000ua8veqm1ga3z" data-title="nyanpass面板中如何自建单端" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
